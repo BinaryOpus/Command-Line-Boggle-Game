@@ -10,6 +10,20 @@ This game is coded entirely in pure python, you won't need any external dependen
 ## 🧮 How It Works
 There are two main components to this code, the Trie(Prefix Tree) and the Board. The Trie is a prefix tree that stores all the words provided in the English dictionary text file. A trie is much more efficient for searching for searching for words as you don't have to continually iterate over each element in the list to search if it exists. Each node in the trie contains a dictionary where the key:value pair is character:node, the character acts as a key for another node further down the trie. The board is used to store the Boggle grid, each cell in the grid has a reference to its neighbours.
 
+Below is an example of what the trie data structure looks like.
+Trie contains these words (cat, car, can, dog)
+the Trie looks like:
+
+(root)
+├── c
+│   └── a
+│       ├── t ★
+│       ├── r ★
+│       └── n ★
+└── d
+    └── o
+        └── g ★
+
 ## 🚀 Getting Started
 Requirements:
  - Python
@@ -33,6 +47,7 @@ Run the game
 If I ever come to work on this project again there are several things I would like to develope further
  - At some point I would like to add a GUI to this game
  - I would like to add bigger grids to this game for example a 5x5 or 6x6 grid
+ - Currently the generation of the characters in the Boggle board is random, this produces some boards with very few words in it. I would like to change this to create better boards with more words to find
 
 ## 📜 License
 This project is licensed under the terms of the MIT License.
