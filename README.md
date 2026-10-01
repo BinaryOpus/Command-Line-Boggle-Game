@@ -14,6 +14,7 @@ Below is an example of what the trie data structure looks like.
 Trie contains these words (cat, car, can, dog)
 the Trie looks like:
 
+'''text
 (root)
 ├── c
 │   └── a
@@ -23,6 +24,7 @@ the Trie looks like:
 └── d
     └── o
         └── g ★
+'''
 
 ## 🚀 Getting Started
 Requirements:
