@@ -24,7 +24,7 @@ Clone the repository:
 
 Navigate into the project:
 
-    cd "Command-Line-Boggle-Game"/src
+    cd "Command-Line-Boggle-Game/src"
 Run the game
 
     python main.py
